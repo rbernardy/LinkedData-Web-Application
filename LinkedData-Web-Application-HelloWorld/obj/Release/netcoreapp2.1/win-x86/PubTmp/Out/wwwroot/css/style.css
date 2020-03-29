@@ -1,0 +1,68 @@
+.usfgreen {
+    background-color: #006747;
+}
+.tab-content {
+    padding: 15px 30px !important;
+    background: #006747;
+    height: auto;
+}
+.home-hero {
+    background-image: url(https://www.lib.usf.edu/wp-content/uploads/2018/11/lib_exterior_colored_blurred_lg-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+.btn-homepage {
+    background-color: #e8ea18;
+    color: #006747;
+    font-weight: 600;
+}
+
+.intro {
+    font-size:1.25rem;
+}
+
+.results {
+    font-size: 1.1rem;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+a:link {
+    color:#e8ea18;
+}
+
+a:visited {
+    color:#006747;
+}
+
+a:hover 
+{
+    color:#9CCB3B;
+    text-decoration:underline;
+}
+
+a:active {
+    color:#D0DEBB;
+}
+
+.fieldtype{
+    font-style:italic;
+}
+
+#usfliblogo
+{
+    width:150px;
+}
+
+.navbar-brand{
+    margin-right:13rem;
+}
+
+.designheader {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+}

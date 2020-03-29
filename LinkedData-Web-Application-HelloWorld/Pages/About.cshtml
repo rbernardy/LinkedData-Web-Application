@@ -1,0 +1,53 @@
+﻿@page
+@model AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+<!--<h2>@ViewData["Title"]</h2> -->
+<!-- <h3>@Model.Message</h3> -->
+
+@using (Html.BeginForm())
+{
+
+    <br/>
+    <br/>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus nulla metus, suscipit lacinia eros volutpat non. Aenean vel leo vulputate, scelerisque sem ut, sagittis neque. Vestibulum a aliquet nisi. Ut ullamcorper fermentum nulla, vel efficitur dui lobortis vel. Morbi sollicitudin nulla lorem, eu fringilla lorem congue sed. Sed dolor nisl, laoreet et odio ac, sollicitudin tristique lectus. Nunc sit amet vestibulum quam, non finibus augue. In purus enim, iaculis vitae tellus nec, elementum volutpat diam. Suspendisse commodo non diam id posuere. Praesent ullamcorper nibh in suscipit blandit.</p>
+
+        <p>Vivamus ac augue id ligula suscipit volutpat. Donec molestie ligula vel nisl posuere, in gravida quam consequat. Sed sit amet porttitor ipsum. Praesent sit amet arcu ac tortor ornare lacinia vel tristique nibh. Nunc congue vitae eros lacinia facilisis. Vivamus a commodo augue. Cras semper dictum mauris, ac finibus felis consequat sed. Integer quis fermentum nibh. Ut molestie quam odio. Donec tristique elit sed gravida facilisis. Duis eu turpis blandit, ultrices est id, euismod neque.</p>
+    </div>
+
+    <br/>
+
+    <fieldset>
+      
+        <div class="dropdown-label">
+            <!--
+           <select id="testquery" name="testquery">
+               <option selected value="0">Default</option>
+               <option value="1">Query 1</option>
+               <option value="2">Query 2</option>
+               <option value="3">Query 3</option>
+           </select>
+            <hr/>
+    -->
+            <input id="terms" name="terms" />
+            <select id="field" name="field">
+                <!--<option value="ZZ">keyword</option>-->
+                <!--<option value="TI">title</option> -->
+                <option value="AU">creator</option>
+                <option selected value="TO">subject</option>
+                <!-- <option value="TX">full-text (all fields)</option> -->
+            </select>
+
+            <!-- <input type="submit" /> -->
+            <button name="searchbtn" value="search" type="submit">Search</button>
+        </div>
+
+    </fieldset>
+}
+
+<br/>
+
+<div id="searchresults">@Html.Raw(Model.msg)</div>
