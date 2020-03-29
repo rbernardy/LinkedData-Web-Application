@@ -126,3 +126,35 @@ C:\Users\rbernard\Box Sync\LinkedData-Web-Application-HelloWorld\LinkedData-Web-
 C:\Users\rbernard\Box Sync\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.dll
 C:\Users\rbernard\Box Sync\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.pdb
 C:\Users\rbernard\Box Sync\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.csproj.CopyComplete
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\bin\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.deps.json
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\bin\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.runtimeconfig.json
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\bin\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.runtimeconfig.dev.json
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\bin\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.dll
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\bin\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.pdb
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\bin\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.Views.dll
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\bin\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.Views.pdb
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.csprojAssemblyReference.cache
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.RazorAssemblyInfo.cache
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.RazorAssemblyInfo.cs
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.AssemblyInfoInputs.cache
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.AssemblyInfo.cs
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.TagHelpers.input.cache
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.TagHelpers.output.cache
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.RazorCoreGenerate.cache
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\Razor\Pages\About.g.cshtml.cs
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\Razor\Pages\Contact.g.cshtml.cs
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\Razor\Pages\Index.g.cshtml.cs
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\Razor\Pages\Privacy.g.cshtml.cs
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_Layout.g.cshtml.cs
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.RazorTargetAssemblyInfo.cache
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.RazorTargetAssemblyInfo.cs
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.Views.pdb
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.dll
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.pdb
+C:\Users\Richard\Box\LinkedData-Web-Application-HelloWorld\LinkedData-Web-Application-HelloWorld\obj\Debug\netcoreapp2.1\LinkedData-Web-Application-HelloWorld.csproj.CopyComplete

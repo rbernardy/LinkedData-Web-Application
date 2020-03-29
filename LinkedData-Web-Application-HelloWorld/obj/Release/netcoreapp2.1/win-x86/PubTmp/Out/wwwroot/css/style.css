@@ -54,7 +54,13 @@ a:active {
 
 #usfliblogo
 {
-    width:150px;
+    width:200px;
+    padding-top:22px;
+}
+
+.navbar
+{
+    height:60px;
 }
 
 .navbar-brand{
