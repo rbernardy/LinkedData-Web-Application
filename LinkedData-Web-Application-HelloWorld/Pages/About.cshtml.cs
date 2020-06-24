@@ -13,6 +13,8 @@ namespace LinkedData_Web_Application_HelloWorld.Pages
 {
     public class AboutModel : PageModel
     {
+        private string myversion = "20200624-1730";
+
         public string Message { get; set; }
         public string msg { get; set; }
         public int tqpostvalue = 0;
@@ -427,8 +429,10 @@ namespace LinkedData_Web_Application_HelloWorld.Pages
 
             SparqlRemoteEndpoint endpoint = new SparqlRemoteEndpoint(new Uri(myuri), "");
             endpoint.Credentials = new System.Net.NetworkCredential();
-            endpoint.Credentials.UserName = "ldteam";
-            endpoint.Credentials.Password = "link101!";
+
+            //endpoint.Credentials.UserName = "";
+            //endpoint.Credentials.Password = "";
+
             endpoint.HttpMode = "POST";
             RemoteQueryProcessor rqp = new RemoteQueryProcessor(endpoint);
 
