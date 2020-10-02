@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "b66b649217c7aed72354d0cee1702726e28951b5"
+    "signature": "3bc1a99c16b15264312ec138293d0d09626a4cb3"
   },
   "compilationOptions": {
     "defines": [
@@ -26,6 +26,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
+          "Trove.Nini": "1.1.0",
           "dotNetRDF": "2.2.0"
         },
         "runtime": {
@@ -444,6 +445,17 @@
         },
         "compile": {
           "ref/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
+        }
+      },
+      "Trove.Nini/1.1.0": {
+        "runtime": {
+          "lib/net20/Nini.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/net20/Nini.dll": {}
         }
       },
       "VDS.Common/1.10.0": {
@@ -3508,6 +3520,13 @@
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
     },
+    "Trove.Nini/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xlKOwHpHdkLA6ldnv61xBmpNCB99CJ9EM3EbSk1qZVyWzPIIndlA3yYmqlZQsbSwtTu4AgZQMw7n2FbPKK8yzw==",
+      "path": "trove.nini/1.1.0",
+      "hashPath": "trove.nini.1.1.0.nupkg.sha512"
+    },
     "VDS.Common/1.10.0": {
       "type": "package",
       "serviceable": true,
@@ -4204,7 +4223,7 @@
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EGoBmf3Na2ppbhPePDE9PlX81r1HuOZH5twBrq7couJZiPTjUnD3648balerQJO6EJ8Sj+43+XuRwQ7r+3tE3w==",
+      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "path": "microsoft.csharp/4.5.0",
       "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
     },

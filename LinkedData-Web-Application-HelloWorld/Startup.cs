@@ -14,9 +14,13 @@ namespace LinkedData_Web_Application_HelloWorld
 {
     public class Startup
     {
+        public string myContentRoot;
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
+            myContentRoot = configuration.GetValue<string>(WebHostDefaults.ContentRootKey);
         }
 
         public IConfiguration Configuration { get; }
@@ -30,7 +34,6 @@ namespace LinkedData_Web_Application_HelloWorld
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

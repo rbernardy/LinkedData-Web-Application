@@ -4542,6 +4542,15 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "Trove.Nini/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Nini.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Nini.dll": {}
+        }
+      },
       "VDS.Common/1.10.0": {
         "type": "package",
         "compile": {
@@ -5967,7 +5976,7 @@
       ]
     },
     "Microsoft.CSharp/4.5.0": {
-      "sha512": "EGoBmf3Na2ppbhPePDE9PlX81r1HuOZH5twBrq7couJZiPTjUnD3648balerQJO6EJ8Sj+43+XuRwQ7r+3tE3w==",
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
       "path": "microsoft.csharp/4.5.0",
       "files": [
@@ -12430,6 +12439,18 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
+    "Trove.Nini/1.1.0": {
+      "sha512": "xlKOwHpHdkLA6ldnv61xBmpNCB99CJ9EM3EbSk1qZVyWzPIIndlA3yYmqlZQsbSwtTu4AgZQMw7n2FbPKK8yzw==",
+      "type": "package",
+      "path": "trove.nini/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Nini.dll",
+        "trove.nini.1.1.0.nupkg.sha512",
+        "trove.nini.nuspec"
+      ]
+    },
     "VDS.Common/1.10.0": {
       "sha512": "IBGU8KEMl9CYcdYimEWR6B44aaU4jPwCzXZ+vGFtiExu0H9p9E52NF1EtYO790PYLRUCG46C5FlqGnhCRWiIpA==",
       "type": "package",
@@ -12464,6 +12485,7 @@
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
+      "Trove.Nini >= 1.1.0",
       "dotNetRDF >= 2.2.0"
     ]
   },
@@ -12519,6 +12541,10 @@
             "version": "[2.1.0, )",
             "autoReferenced": true
           },
+          "Trove.Nini": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          },
           "dotNetRDF": {
             "target": "Package",
             "version": "[2.2.0, )"
@@ -12531,5 +12557,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Trove.Nini 1.1.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Trove.Nini",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

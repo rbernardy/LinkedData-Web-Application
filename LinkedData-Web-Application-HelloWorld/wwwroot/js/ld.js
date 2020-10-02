@@ -2,6 +2,8 @@ $(document).ready(function()
 {
     console.log("document ready...");
 
+    $(".home-hero").css("height", "100vh");
+
 });
 
 $("#searchtype").on("show.bs.dropbown",function()

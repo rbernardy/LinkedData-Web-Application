@@ -4,23 +4,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace LinkedData_Web_Application_HelloWorld.Pages
+// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+namespace LinkedData_Web_Application_HelloWorld
 {
-    public class IndexModel : PageModel
+    public class HomeController : Controller
     {
-        public IndexModel(IHostingEnvironment env)
+        private readonly IHostingEnvironment _env;
+
+        public HomeController(IHostingEnvironment env)
         {
             _env = env;
         }
-
-        public void OnGet()
-        {
-
-        }
-
-        private readonly IHostingEnvironment _env;
 
         public ActionResult Index()
         {

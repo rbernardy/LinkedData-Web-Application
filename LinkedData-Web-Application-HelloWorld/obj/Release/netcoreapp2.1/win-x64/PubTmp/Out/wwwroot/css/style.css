@@ -1,3 +1,11 @@
+/* 20201001-1104 */
+
+body 
+{
+    display: block;
+    overflow: auto;
+}
+
 .usfgreen {
     background-color: #006747;
 }
@@ -13,7 +21,15 @@
     background-attachment: fixed;
     padding-top: 90px;
     padding-bottom: 80px;
+    display: block;
+    overflow: auto;
 }
+
+.container {
+    display: block;
+    overflow: auto;
+}
+
 .btn-homepage {
     background-color: #e8ea18;
     color: #006747;
@@ -71,4 +87,8 @@ a:active {
     font-size: 1.5rem;
     color: white;
     text-shadow: 1px 1px 1px #000000;
+}
+
+.log {
+    background-color: white;
 }

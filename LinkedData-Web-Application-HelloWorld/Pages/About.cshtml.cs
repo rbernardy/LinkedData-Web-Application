@@ -2,22 +2,40 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting.Internal;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Nini.Config;
 using VDS.RDF;
 using VDS.RDF.Parsing;
 using VDS.RDF.Query;
+using System.IO;
+using System.Reflection;
 
 namespace LinkedData_Web_Application_HelloWorld.Pages
 {
     public class AboutModel : PageModel
     {
-        private string myversion = "20200624-1730";
-
+        public string myversion = "20201001-1040";
         public string Message { get; set; }
         public string msg { get; set; }
+        public string log { get; set; }
         public int tqpostvalue = 0;
+
+        string contentRootPath;
+        string webRootPath;
+
+        private readonly IHostingEnvironment _env;
+        private IHostingEnvironment _hostingEnvironment;
+
+        public AboutModel(IHostingEnvironment env)
+        {
+            _env = env;
+
+            log += "System log...<br/><br/>";
+        }
 
         [HttpPost]
         public ActionResult SubmitAction(FormCollection collection)
@@ -25,12 +43,15 @@ namespace LinkedData_Web_Application_HelloWorld.Pages
             tqpostvalue = int.Parse(collection["testquery"]);
 
             Message = "<p>Via the ActionResult SubmitAction.</p>";
-            msg = getResults(tqpostvalue,Request.Form["field"],Request.Form["terms"]);
+            msg = getResults(tqpostvalue, Request.Form["field"], Request.Form["terms"]);
             return null;
         }
 
         public void OnPost()
         {
+            contentRootPath = _env.ContentRootPath;
+            webRootPath = _env.WebRootPath;
+
             Message += "<p>Was a post</p>";
 
             try
@@ -44,7 +65,7 @@ namespace LinkedData_Web_Application_HelloWorld.Pages
 
             Message = "Via the ActionResult SubmitAction.";
 
-            msg = getResults(tqpostvalue,Request.Form["field"],Request.Form["terms"]);
+            msg = getResults(tqpostvalue, Request.Form["field"], Request.Form["terms"]);
         }
 
         public void OnGet()
@@ -54,8 +75,8 @@ namespace LinkedData_Web_Application_HelloWorld.Pages
             Message = "This is the message to the Linked Data Team.";
 
             IQueryCollection qs = Request.Query;
-            
-            if (qs !=null && qs["testquery"].ToString().Length>0)
+
+            if (qs != null && qs["testquery"].ToString().Length > 0)
             {
                 Message += " testquery qs attr=[" + qs["testquery"].ToString() + "].";
                 tqvalue = int.Parse(qs["testquery"]);
@@ -65,8 +86,14 @@ namespace LinkedData_Web_Application_HelloWorld.Pages
                 Message += " No testquery qs attr.";
             }
 
-            msg = getResults(tqvalue,null,null);
+            msg = getResults(tqvalue, null, null);
         }
+
+        private string Get_Content_Root()
+        {
+            string projectRootPath = _hostingEnvironment.ContentRootPath;
+            return projectRootPath;
+        }   
 
         private Dictionary<string,string> getSubjectHeadings(string linkURI, string myuri,ref RemoteQueryProcessor rqp)
         {
@@ -99,6 +126,8 @@ namespace LinkedData_Web_Application_HelloWorld.Pages
                 }
             }
             ";
+
+            log += DateTime.Now.ToLocalTime() + ": " + query + "<br/><br/>";
                 
             SparqlQuery q = parser.ParseFromString(query);
             string subjectURI=null, slabel=null,msg=null;
@@ -190,6 +219,14 @@ namespace LinkedData_Web_Application_HelloWorld.Pages
                 testquerymsg = testquery.ToString();
             }
 
+            //contentRootPath;
+            //webRootPath;
+
+            var source = new IniConfigSource(webRootPath + "/conf/ld-web-app.ini");
+            var config = source.Configs["sparql"];
+            myuri = config.Get("myuri");
+            log += DateTime.Now.ToLocalTime() + ": myuri from /conf/ld-web-app.ini = [" + myuri + "].<br/><br/>";
+
             SparqlQueryParser parser = new SparqlQueryParser();
 
             if (!(field != null && terms != null))
@@ -250,10 +287,14 @@ namespace LinkedData_Web_Application_HelloWorld.Pages
             }
             else
             {
-                myuri = "http://disdev.lib.usf.edu:3030/ohp-ybor-test6-with-bonita-skos-authorities/query";
+                //myuri = "http://disdev.lib.usf.edu:3030/ohp-ybor-test6-with-bonita-skos-authorities/query";
+                myuri = "http://fuseki.dss-test.org:3030/linkeddata-webapp-ohp-ybor-test6-with-bonita-skos-authorities/query";
+
+                log += DateTime.Now.ToLocalTime() + ": " + myuri + "<br/><br/>";
 
                 if (terms.Trim().Length == 0) terms = "*";
 
+                log += DateTime.Now.ToLocalTime() + ": field=[" + field + "], terms=[" + terms + "].<br/><br/>";
                 switch (field)
                 {
                     case "Full-text":
@@ -425,6 +466,8 @@ namespace LinkedData_Web_Application_HelloWorld.Pages
                 }
             }
 
+            log += DateTime.Now.ToLocalTime() + ": " + query + "<br/><br/>";
+
             SparqlQuery q = parser.ParseFromString(query);
 
             SparqlRemoteEndpoint endpoint = new SparqlRemoteEndpoint(new Uri(myuri), "");
@@ -499,6 +542,8 @@ namespace LinkedData_Web_Application_HelloWorld.Pages
             int idx = 0;
             string linkURI=null,linkHTML=null,lastLabel=null;
 
+            log += DateTime.Now.ToLocalTime() + ": There were " + results.Count + " results.<br/><br/>";
+
             myout += "<hr/>";
 
             foreach (SparqlResult result in results)
@@ -534,6 +579,9 @@ namespace LinkedData_Web_Application_HelloWorld.Pages
 
                     Dictionary<string, string> shs = new Dictionary<string, string>();
                     shs = getSubjectHeadings(linkURI, myuri, ref rqp);
+
+                    log += DateTime.Now.ToLocalTime() + ": There were " + shs.Count + " subject headings retrieved.<br/><br/>";
+
                     idx = 0;
 
                     if (shs.Count>0)

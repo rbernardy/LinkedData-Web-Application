@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1/win-x64",
-    "signature": "1bcb2e87adc4f343c0494da14c9d2c1a16147e28"
+    "signature": "7622101cb8bd091412de1a82c63325846c68abc1"
   },
   "compilationOptions": {
     "defines": [
@@ -26,6 +26,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.6",
           "Microsoft.NETCore.App": "2.1.6",
+          "Trove.Nini": "1.1.0",
           "dotNetRDF": "2.2.0"
         },
         "compile": {
@@ -3003,6 +3004,11 @@
           "ref/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "Trove.Nini/1.1.0": {
+        "compile": {
+          "lib/net20/Nini.dll": {}
+        }
+      },
       "VDS.Common/1.10.0": {
         "compile": {
           "lib/netstandard2.0/VDS.Common.dll": {}
@@ -3014,6 +3020,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.6",
           "Microsoft.NETCore.App": "2.1.6",
+          "Trove.Nini": "1.1.0",
           "dotNetRDF": "2.2.0"
         },
         "runtime": {
@@ -3278,6 +3285,14 @@
           }
         }
       },
+      "Trove.Nini/1.1.0": {
+        "runtime": {
+          "lib/net20/Nini.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      },
       "VDS.Common/1.10.0": {
         "runtime": {
           "lib/netstandard2.0/VDS.Common.dll": {
@@ -3468,6 +3483,13 @@
       "sha512": "sha512-91tvfHWHSrYFPolCwWYqbpo1YaoBUCQ3uNZ/O/zr0ev5BnkoATJoie16ywlMVUaXZtfSfNELxhtG3aqpTfwR4w==",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "Trove.Nini/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xlKOwHpHdkLA6ldnv61xBmpNCB99CJ9EM3EbSk1qZVyWzPIIndlA3yYmqlZQsbSwtTu4AgZQMw7n2FbPKK8yzw==",
+      "path": "trove.nini/1.1.0",
+      "hashPath": "trove.nini.1.1.0.nupkg.sha512"
     },
     "VDS.Common/1.10.0": {
       "type": "package",
@@ -4165,7 +4187,7 @@
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EGoBmf3Na2ppbhPePDE9PlX81r1HuOZH5twBrq7couJZiPTjUnD3648balerQJO6EJ8Sj+43+XuRwQ7r+3tE3w==",
+      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "path": "microsoft.csharp/4.5.0",
       "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
     },
