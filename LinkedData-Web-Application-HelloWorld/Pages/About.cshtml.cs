@@ -18,7 +18,7 @@ namespace LinkedData_Web_Application_HelloWorld.Pages
 {
     public class AboutModel : PageModel
     {
-        public string myversion = "20201001-1040";
+        public string myversion = "20201002-1144";
         public string Message { get; set; }
         public string msg { get; set; }
         public string log { get; set; }
@@ -288,7 +288,7 @@ namespace LinkedData_Web_Application_HelloWorld.Pages
             else
             {
                 //myuri = "http://disdev.lib.usf.edu:3030/ohp-ybor-test6-with-bonita-skos-authorities/query";
-                myuri = "http://fuseki.dss-test.org:3030/linkeddata-webapp-ohp-ybor-test6-with-bonita-skos-authorities/query";
+                //myuri = "http://fuseki.dss-test.org:3030/linkeddata-webapp-ohp-ybor-test6-with-bonita-skos-authorities/query";
 
                 log += DateTime.Now.ToLocalTime() + ": " + myuri + "<br/><br/>";
 
